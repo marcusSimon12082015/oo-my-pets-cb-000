@@ -14,6 +14,7 @@ class Owner
   def pets
     @pets
   end
+
   def say_species
     return "I am a #{@species}."
   end
@@ -41,7 +42,7 @@ class Owner
   def sell_pets
     @pets.collect{|key, array|
       array.collect{ |animal|
-        animal.mood = "nervous"
+        puts "#{animal}"
       }
     }
   end
