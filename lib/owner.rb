@@ -38,6 +38,13 @@ class Owner
   def feed_fish
     @pets[:fishes].collect{|fish| fish.mood = "happy"}
   end
+  def sell_pets
+    @pets.collect{|key, array|
+      array.collect{ |animal|
+        animal.mood = "nervous"
+      }
+    }
+  end
   def self.all
     @@all
   end
