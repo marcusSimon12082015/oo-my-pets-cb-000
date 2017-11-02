@@ -41,9 +41,7 @@ class Owner
   end
   def sell_pets
     @pets.collect{|key, array|
-      array.collect{ |animal|
-        puts "#{animal.name}"
-      }
+      array.inspect
     }
   end
   def self.all
