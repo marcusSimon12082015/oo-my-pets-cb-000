@@ -42,7 +42,7 @@ class Owner
   def sell_pets
     @pets.collect{|key, array|
       array.collect{ |animal|
-        puts "#{animal}"
+        puts "#{animal.name}"
       }
     }
   end
