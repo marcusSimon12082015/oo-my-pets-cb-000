@@ -9,6 +9,6 @@ class Owner
     @@all
   end
   def self.reset_all
-    @@all.clear
+    @@all.length = 0
   end
 end
